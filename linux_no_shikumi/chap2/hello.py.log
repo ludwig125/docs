@@ -1,0 +1,1329 @@
+execve("/home/ludwig125/.pyenv/shims/python3", ["python3", "./hello.py"], [/* 67 vars */]) = 0
+brk(0)                                  = 0x1a14000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f19c79c4000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=95589, ...}) = 0
+mmap(NULL, 95589, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f19c79ac000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0
+mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f19c73db000
+mprotect(0x7f19c7599000, 2097152, PROT_NONE) = 0
+mmap(0x7f19c7799000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7f19c7799000
+mmap(0x7f19c779f000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f19c779f000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f19c79ab000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f19c79a9000
+arch_prctl(ARCH_SET_FS, 0x7f19c79a9740) = 0
+mprotect(0x7f19c7799000, 16384, PROT_READ) = 0
+mprotect(0x605000, 4096, PROT_READ)     = 0
+mprotect(0x7f19c79c6000, 4096, PROT_READ) = 0
+munmap(0x7f19c79ac000, 95589)           = 0
+brk(0)                                  = 0x1a14000
+brk(0x1a35000)                          = 0x1a35000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=8191536, ...}) = 0
+mmap(NULL, 8191536, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f19c6c0b000
+close(3)                                = 0
+execve("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv/shims/bash", ["bash", "/home/ludwig125/.pyenv/shims/pyt"..., "./hello.py"], [/* 67 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/ludwig125/.pyenv/shims/bash", ["bash", "/home/ludwig125/.pyenv/shims/pyt"..., "./hello.py"], [/* 67 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/ludwig125/.pyenv/bin/bash", ["bash", "/home/ludwig125/.pyenv/shims/pyt"..., "./hello.py"], [/* 67 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv/shims/bash", ["bash", "/home/ludwig125/.pyenv/shims/pyt"..., "./hello.py"], [/* 67 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/ludwig125/.pyenv/shims/bash", ["bash", "/home/ludwig125/.pyenv/shims/pyt"..., "./hello.py"], [/* 67 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/ludwig125/.pyenv/bin/bash", ["bash", "/home/ludwig125/.pyenv/shims/pyt"..., "./hello.py"], [/* 67 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/local/sbin/bash", ["bash", "/home/ludwig125/.pyenv/shims/pyt"..., "./hello.py"], [/* 67 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/local/bin/bash", ["bash", "/home/ludwig125/.pyenv/shims/pyt"..., "./hello.py"], [/* 67 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/sbin/bash", ["bash", "/home/ludwig125/.pyenv/shims/pyt"..., "./hello.py"], [/* 67 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/bin/bash", ["bash", "/home/ludwig125/.pyenv/shims/pyt"..., "./hello.py"], [/* 67 vars */]) = -1 ENOENT (No such file or directory)
+execve("/sbin/bash", ["bash", "/home/ludwig125/.pyenv/shims/pyt"..., "./hello.py"], [/* 67 vars */]) = -1 ENOENT (No such file or directory)
+execve("/bin/bash", ["bash", "/home/ludwig125/.pyenv/shims/pyt"..., "./hello.py"], [/* 67 vars */]) = 0
+brk(0)                                  = 0x1237000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f11c8a6e000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=95589, ...}) = 0
+mmap(NULL, 95589, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f11c8a56000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\303\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=167096, ...}) = 0
+mmap(NULL, 2264288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f11c8625000
+mprotect(0x7f11c864a000, 2093056, PROT_NONE) = 0
+mmap(0x7f11c8849000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7f11c8849000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\16\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14664, ...}) = 0
+mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f11c8421000
+mprotect(0x7f11c8424000, 2093056, PROT_NONE) = 0
+mmap(0x7f11c8623000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f11c8623000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f11c8a55000
+mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f11c8058000
+mprotect(0x7f11c8216000, 2097152, PROT_NONE) = 0
+mmap(0x7f11c8416000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7f11c8416000
+mmap(0x7f11c841c000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f11c841c000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f11c8a53000
+arch_prctl(ARCH_SET_FS, 0x7f11c8a53740) = 0
+mprotect(0x7f11c8416000, 16384, PROT_READ) = 0
+mprotect(0x7f11c8623000, 4096, PROT_READ) = 0
+mprotect(0x7f11c8849000, 16384, PROT_READ) = 0
+mprotect(0x6ef000, 4096, PROT_READ)     = 0
+mprotect(0x7f11c8a70000, 4096, PROT_READ) = 0
+munmap(0x7f11c8a56000, 95589)           = 0
+open("/dev/tty", O_RDWR|O_NONBLOCK)     = 3
+close(3)                                = 0
+brk(0)                                  = 0x1237000
+brk(0x1238000)                          = 0x1238000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=8191536, ...}) = 0
+mmap(NULL, 8191536, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f11c7888000
+close(3)                                = 0
+brk(0x1239000)                          = 0x1239000
+brk(0x123a000)                          = 0x123a000
+getuid()                                = 1000
+getgid()                                = 1002
+geteuid()                               = 1000
+getegid()                               = 1002
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+brk(0x123b000)                          = 0x123b000
+open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f11c8a6d000
+read(3, "MemTotal:        4041380 kB\nMemF"..., 1024) = 1024
+close(3)                                = 0
+munmap(0x7f11c8a6d000, 4096)            = 0
+brk(0x123c000)                          = 0x123c000
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f11c808ecb0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f11c808ecb0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f11c808ecb0}, 8) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f11c808ecb0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f11c808ecb0}, {SIG_DFL, [], SA_RESTORER, 0x7f11c808ecb0}, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f11c808ecb0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f11c808ecb0}, {SIG_DFL, [], SA_RESTORER, 0x7f11c808ecb0}, 8) = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+rt_sigaction(SIGQUIT, {SIG_IGN, [], SA_RESTORER, 0x7f11c808ecb0}, {SIG_DFL, [], SA_RESTORER, 0x7f11c808ecb0}, 8) = 0
+uname({sys="Linux", node="ludwig125-virtual-machine", ...}) = 0
+brk(0x123d000)                          = 0x123d000
+brk(0x123e000)                          = 0x123e000
+brk(0x123f000)                          = 0x123f000
+brk(0x1240000)                          = 0x1240000
+brk(0x1241000)                          = 0x1241000
+stat("/home/ludwig125/git/work/linux_no_shikumi/chap2", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+getpid()                                = 14131
+open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0
+mmap(NULL, 26258, PROT_READ, MAP_SHARED, 3, 0) = 0x7f11c8a67000
+close(3)                                = 0
+brk(0x1242000)                          = 0x1242000
+getppid()                               = 14128
+stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv/shims/bash", 0x7ffeca86fc10) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/shims/bash", 0x7ffeca86fc10) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/bin/bash", 0x7ffeca86fc10) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv/shims/bash", 0x7ffeca86fc10) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/shims/bash", 0x7ffeca86fc10) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/bin/bash", 0x7ffeca86fc10) = -1 ENOENT (No such file or directory)
+stat("/usr/local/sbin/bash", 0x7ffeca86fc10) = -1 ENOENT (No such file or directory)
+stat("/usr/local/bin/bash", 0x7ffeca86fc10) = -1 ENOENT (No such file or directory)
+stat("/usr/sbin/bash", 0x7ffeca86fc10)  = -1 ENOENT (No such file or directory)
+stat("/usr/bin/bash", 0x7ffeca86fc10)   = -1 ENOENT (No such file or directory)
+stat("/sbin/bash", 0x7ffeca86fc10)      = -1 ENOENT (No such file or directory)
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1002
+getuid()                                = 1000
+getgid()                                = 1002
+access("/bin/bash", X_OK)               = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1002
+getuid()                                = 1000
+getgid()                                = 1002
+access("/bin/bash", R_OK)               = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1002
+getuid()                                = 1000
+getgid()                                = 1002
+access("/bin/bash", X_OK)               = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1002
+getuid()                                = 1000
+getgid()                                = 1002
+access("/bin/bash", R_OK)               = 0
+brk(0x1243000)                          = 0x1243000
+brk(0x1244000)                          = 0x1244000
+getpgrp()                               = 14128
+rt_sigaction(SIGCHLD, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f11c808ecb0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f11c808ecb0}, 8) = 0
+getrlimit(RLIMIT_NPROC, {rlim_cur=31398, rlim_max=31398}) = 0
+brk(0x1245000)                          = 0x1245000
+brk(0x1246000)                          = 0x1246000
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+open("/home/ludwig125/.pyenv/shims/python3", O_RDONLY) = 3
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffeca86fef0) = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "#!/usr/bin/env bash\nset -e\n[ -n "..., 80) = 80
+lseek(3, 0, SEEK_SET)                   = 0
+getrlimit(RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=4*1024}) = 0
+fcntl(255, F_GETFD)                     = -1 EBADF (Bad file descriptor)
+dup2(3, 255)                            = 255
+close(3)                                = 0
+fcntl(255, F_SETFD, FD_CLOEXEC)         = 0
+fcntl(255, F_GETFL)                     = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+fstat(255, {st_mode=S_IFREG|0775, st_size=410, ...}) = 0
+lseek(255, 0, SEEK_CUR)                 = 0
+brk(0x1247000)                          = 0x1247000
+read(255, "#!/usr/bin/env bash\nset -e\n[ -n "..., 410) = 410
+brk(0x1248000)                          = 0x1248000
+brk(0x1249000)                          = 0x1249000
+stat("./hello.py", {st_mode=S_IFREG|0664, st_size=21, ...}) = 0
+brk(0x124a000)                          = 0x124a000
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f11c808ecb0}, {SIG_DFL, [], SA_RESTORER, 0x7f11c808ecb0}, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f11c808ecb0}, {SIG_IGN, [], SA_RESTORER, 0x7f11c808ecb0}, 8) = 0
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f11c808ecb0}, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f11c808ecb0}, 8) = 0
+execve("/home/ludwig125/.pyenv/libexec/pyenv", ["/home/ludwig125/.pyenv/libexec/p"..., "exec", "python3", "./hello.py"], [/* 66 vars */]) = 0
+brk(0)                                  = 0x23ef000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc4c56e4000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=95589, ...}) = 0
+mmap(NULL, 95589, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fc4c56cc000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0
+mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc4c50fb000
+mprotect(0x7fc4c52b9000, 2097152, PROT_NONE) = 0
+mmap(0x7fc4c54b9000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7fc4c54b9000
+mmap(0x7fc4c54bf000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fc4c54bf000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc4c56cb000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc4c56c9000
+arch_prctl(ARCH_SET_FS, 0x7fc4c56c9740) = 0
+mprotect(0x7fc4c54b9000, 16384, PROT_READ) = 0
+mprotect(0x605000, 4096, PROT_READ)     = 0
+mprotect(0x7fc4c56e6000, 4096, PROT_READ) = 0
+munmap(0x7fc4c56cc000, 95589)           = 0
+brk(0)                                  = 0x23ef000
+brk(0x2410000)                          = 0x2410000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=8191536, ...}) = 0
+mmap(NULL, 8191536, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fc4c492b000
+close(3)                                = 0
+execve("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv/shims/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "exec", "python3", "./hello.py"], [/* 66 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/ludwig125/.pyenv/shims/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "exec", "python3", "./hello.py"], [/* 66 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/ludwig125/.pyenv/bin/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "exec", "python3", "./hello.py"], [/* 66 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv/shims/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "exec", "python3", "./hello.py"], [/* 66 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/ludwig125/.pyenv/shims/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "exec", "python3", "./hello.py"], [/* 66 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/ludwig125/.pyenv/bin/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "exec", "python3", "./hello.py"], [/* 66 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/local/sbin/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "exec", "python3", "./hello.py"], [/* 66 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/local/bin/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "exec", "python3", "./hello.py"], [/* 66 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/sbin/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "exec", "python3", "./hello.py"], [/* 66 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/bin/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "exec", "python3", "./hello.py"], [/* 66 vars */]) = -1 ENOENT (No such file or directory)
+execve("/sbin/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "exec", "python3", "./hello.py"], [/* 66 vars */]) = -1 ENOENT (No such file or directory)
+execve("/bin/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "exec", "python3", "./hello.py"], [/* 66 vars */]) = 0
+brk(0)                                  = 0xac6000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f952abbf000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=95589, ...}) = 0
+mmap(NULL, 95589, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f952aba7000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\303\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=167096, ...}) = 0
+mmap(NULL, 2264288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f952a776000
+mprotect(0x7f952a79b000, 2093056, PROT_NONE) = 0
+mmap(0x7f952a99a000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7f952a99a000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\16\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14664, ...}) = 0
+mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f952a572000
+mprotect(0x7f952a575000, 2093056, PROT_NONE) = 0
+mmap(0x7f952a774000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f952a774000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f952aba6000
+mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f952a1a9000
+mprotect(0x7f952a367000, 2097152, PROT_NONE) = 0
+mmap(0x7f952a567000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7f952a567000
+mmap(0x7f952a56d000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f952a56d000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f952aba4000
+arch_prctl(ARCH_SET_FS, 0x7f952aba4740) = 0
+mprotect(0x7f952a567000, 16384, PROT_READ) = 0
+mprotect(0x7f952a774000, 4096, PROT_READ) = 0
+mprotect(0x7f952a99a000, 16384, PROT_READ) = 0
+mprotect(0x6ef000, 4096, PROT_READ)     = 0
+mprotect(0x7f952abc1000, 4096, PROT_READ) = 0
+munmap(0x7f952aba7000, 95589)           = 0
+open("/dev/tty", O_RDWR|O_NONBLOCK)     = 3
+close(3)                                = 0
+brk(0)                                  = 0xac6000
+brk(0xac7000)                           = 0xac7000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=8191536, ...}) = 0
+mmap(NULL, 8191536, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f95299d9000
+close(3)                                = 0
+brk(0xac8000)                           = 0xac8000
+brk(0xac9000)                           = 0xac9000
+getuid()                                = 1000
+getgid()                                = 1002
+geteuid()                               = 1000
+getegid()                               = 1002
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+brk(0xaca000)                           = 0xaca000
+open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f952abbe000
+read(3, "MemTotal:        4041380 kB\nMemF"..., 1024) = 1024
+close(3)                                = 0
+munmap(0x7f952abbe000, 4096)            = 0
+brk(0xacb000)                           = 0xacb000
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f952a1dfcb0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f952a1dfcb0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f952a1dfcb0}, 8) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f952a1dfcb0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f952a1dfcb0}, {SIG_DFL, [], SA_RESTORER, 0x7f952a1dfcb0}, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f952a1dfcb0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f952a1dfcb0}, {SIG_DFL, [], SA_RESTORER, 0x7f952a1dfcb0}, 8) = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+rt_sigaction(SIGQUIT, {SIG_IGN, [], SA_RESTORER, 0x7f952a1dfcb0}, {SIG_DFL, [], SA_RESTORER, 0x7f952a1dfcb0}, 8) = 0
+uname({sys="Linux", node="ludwig125-virtual-machine", ...}) = 0
+brk(0xacc000)                           = 0xacc000
+brk(0xacd000)                           = 0xacd000
+brk(0xace000)                           = 0xace000
+brk(0xacf000)                           = 0xacf000
+brk(0xad0000)                           = 0xad0000
+stat("/home/ludwig125/git/work/linux_no_shikumi/chap2", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+getpid()                                = 14131
+open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0
+mmap(NULL, 26258, PROT_READ, MAP_SHARED, 3, 0) = 0x7f952abb8000
+close(3)                                = 0
+brk(0xad1000)                           = 0xad1000
+getppid()                               = 14128
+stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv/shims/bash", 0x7ffc0682d300) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/shims/bash", 0x7ffc0682d300) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/bin/bash", 0x7ffc0682d300) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv/shims/bash", 0x7ffc0682d300) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/shims/bash", 0x7ffc0682d300) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/bin/bash", 0x7ffc0682d300) = -1 ENOENT (No such file or directory)
+stat("/usr/local/sbin/bash", 0x7ffc0682d300) = -1 ENOENT (No such file or directory)
+stat("/usr/local/bin/bash", 0x7ffc0682d300) = -1 ENOENT (No such file or directory)
+stat("/usr/sbin/bash", 0x7ffc0682d300)  = -1 ENOENT (No such file or directory)
+stat("/usr/bin/bash", 0x7ffc0682d300)   = -1 ENOENT (No such file or directory)
+stat("/sbin/bash", 0x7ffc0682d300)      = -1 ENOENT (No such file or directory)
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1002
+getuid()                                = 1000
+getgid()                                = 1002
+access("/bin/bash", X_OK)               = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1002
+getuid()                                = 1000
+getgid()                                = 1002
+access("/bin/bash", R_OK)               = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1002
+getuid()                                = 1000
+getgid()                                = 1002
+access("/bin/bash", X_OK)               = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1002
+getuid()                                = 1000
+getgid()                                = 1002
+access("/bin/bash", R_OK)               = 0
+brk(0xad2000)                           = 0xad2000
+brk(0xad3000)                           = 0xad3000
+getpgrp()                               = 14128
+rt_sigaction(SIGCHLD, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f952a1dfcb0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f952a1dfcb0}, 8) = 0
+getrlimit(RLIMIT_NPROC, {rlim_cur=31398, rlim_max=31398}) = 0
+brk(0xad4000)                           = 0xad4000
+brk(0xad5000)                           = 0xad5000
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+open("/home/ludwig125/.pyenv/libexec/pyenv", O_RDONLY) = 3
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffc0682d5e0) = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "#!/usr/bin/env bash\nset -e\nunset"..., 80) = 80
+lseek(3, 0, SEEK_SET)                   = 0
+getrlimit(RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=4*1024}) = 0
+fcntl(255, F_GETFD)                     = -1 EBADF (Bad file descriptor)
+dup2(3, 255)                            = 255
+close(3)                                = 0
+fcntl(255, F_SETFD, FD_CLOEXEC)         = 0
+fcntl(255, F_GETFL)                     = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+fstat(255, {st_mode=S_IFREG|0775, st_size=2825, ...}) = 0
+lseek(255, 0, SEEK_CUR)                 = 0
+brk(0xad6000)                           = 0xad6000
+brk(0xad7000)                           = 0xad7000
+read(255, "#!/usr/bin/env bash\nset -e\nunset"..., 2825) = 2825
+brk(0xad8000)                           = 0xad8000
+brk(0xad9000)                           = 0xad9000
+brk(0xada000)                           = 0xada000
+brk(0xadb000)                           = 0xadb000
+brk(0xadc000)                           = 0xadc000
+brk(0xadd000)                           = 0xadd000
+open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+fcntl(2, F_GETFD)                       = 0
+fcntl(2, F_DUPFD, 10)                   = 10
+fcntl(2, F_GETFD)                       = 0
+fcntl(10, F_SETFD, FD_CLOEXEC)          = 0
+dup2(3, 2)                              = 2
+close(3)                                = 0
+open("/home/ludwig125/.pyenv/libexec/../libexec/pyenv-realpath.dylib", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+brk(0xade000)                           = 0xade000
+open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2570, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f952abb7000
+read(3, "# Locale name alias data base.\n#"..., 4096) = 2570
+brk(0xadf000)                           = 0xadf000
+brk(0xae0000)                           = 0xae0000
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x7f952abb7000, 4096)            = 0
+open("/usr/share/locale/ja/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale-langpack/ja/LC_MESSAGES/libc.mo", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=154537, ...}) = 0
+mmap(NULL, 154537, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f952ab7e000
+close(3)                                = 0
+brk(0xae4000)                           = 0xae4000
+open("/usr/share/locale/ja/LC_MESSAGES/bash.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/usr/share/locale-langpack/ja/LC_MESSAGES/bash.mo", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=183588, ...}) = 0
+mmap(NULL, 183588, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f952ab51000
+close(3)                                = 0
+write(2, "/home/ludwig125/.pyenv/libexec/p"..., 365) = 365
+dup2(10, 2)                             = 2
+fcntl(10, F_GETFD)                      = 0x1 (flags FD_CLOEXEC)
+close(10)                               = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+pipe([3, 4])                            = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+lseek(255, -1871, SEEK_CUR)             = 954
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f952aba4a10) = 14132
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGCHLD, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f952a1dfcb0}, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f952a1dfcb0}, 8) = 0
+close(4)                                = 0
+read(3, "/bin/readlink\n", 128)         = 14
+read(3, "", 128)                        = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGINT, {0x4438d0, [], SA_RESTORER, 0x7f952a1dfcb0}, {SIG_DFL, [], SA_RESTORER, 0x7f952a1dfcb0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 14132
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f952a1dfcb0}, {0x4438d0, [], SA_RESTORER, 0x7f952a1dfcb0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=14132, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, 0x7ffc0682c398, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn()                          = 0
+read(255, "\nif [ -z \"${PYENV_ROOT}\" ]; then"..., 2825) = 1871
+lstat("./hello.py", {st_mode=S_IFREG|0664, st_size=21, ...}) = 0
+open("/dev/null", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+fcntl(2, F_GETFD)                       = 0
+fcntl(2, F_DUPFD, 10)                   = 10
+fcntl(2, F_GETFD)                       = 0
+fcntl(10, F_SETFD, FD_CLOEXEC)          = 0
+dup2(3, 2)                              = 2
+close(3)                                = 0
+stat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/git", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ludwig125/git/work", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ludwig125/git/work/linux_no_shikumi", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ludwig125/git/work/linux_no_shikumi/chap2", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+chdir("/home/ludwig125/git/work/linux_no_shikumi/chap2") = 0
+dup2(10, 2)                             = 2
+fcntl(10, F_GETFD)                      = 0x1 (flags FD_CLOEXEC)
+close(10)                               = 0
+stat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/git", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ludwig125/git/work", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ludwig125/git/work/linux_no_shikumi", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ludwig125/git/work/linux_no_shikumi/chap2", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+chdir("/home/ludwig125/git/work/linux_no_shikumi/chap2") = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+pipe([3, 4])                            = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+lseek(255, -1172, SEEK_CUR)             = 1653
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f952aba4a10) = 14135
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGCHLD, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f952a1dfcb0}, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f952a1dfcb0}, 8) = 0
+close(4)                                = 0
+read(3, "/home/ludwig125/.pyenv/libexec\n", 128) = 31
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=14135, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 14135
+wait4(-1, 0x7ffc0682c858, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn()                          = 31
+read(3, "", 128)                        = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGINT, {0x4438d0, [], SA_RESTORER, 0x7f952a1dfcb0}, {SIG_DFL, [], SA_RESTORER, 0x7f952a1dfcb0}, 8) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f952a1dfcb0}, {0x4438d0, [], SA_RESTORER, 0x7f952a1dfcb0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+read(255, "for plugin_bin in \"${PYENV_ROOT}"..., 2825) = 1172
+openat(AT_FDCWD, "/home/ludwig125/.pyenv/plugins/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+brk(0xaf4000)                           = 0xaf4000
+getdents(3, /* 5 entries */, 32768)     = 152
+getdents(3, /* 0 entries */, 32768)     = 0
+brk(0xae4000)                           = 0xae4000
+close(3)                                = 0
+stat("/home/ludwig125/.pyenv/plugins/python-build", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lstat("/home/ludwig125/.pyenv/plugins/python-build/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lstat("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv/bin", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/ludwig125/.pyenv/plugins/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+brk(0xaf4000)                           = 0xaf4000
+getdents(3, /* 5 entries */, 32768)     = 152
+getdents(3, /* 0 entries */, 32768)     = 0
+brk(0xae4000)                           = 0xae4000
+close(3)                                = 0
+stat("/home/ludwig125/.pyenv/plugins/python-build", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lstat("/home/ludwig125/.pyenv/plugins/python-build/etc", 0x7ffc0682d2d0) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lstat("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv/etc", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv/etc", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lstat("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv/etc/pyenv.d", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+brk(0xae5000)                           = 0xae5000
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+brk(0xae6000)                           = 0xae6000
+pipe([3, 4])                            = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f952aba4a10) = 14138
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGCHLD, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f952a1dfcb0}, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f952a1dfcb0}, 8) = 0
+close(4)                                = 0
+read(3, "/home/ludwig125/.pyenv/libexec/p"..., 128) = 42
+read(3, "", 128)                        = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGINT, {0x4438d0, [], SA_RESTORER, 0x7f952a1dfcb0}, {SIG_DFL, [], SA_RESTORER, 0x7f952a1dfcb0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 14138
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f952a1dfcb0}, {0x4438d0, [], SA_RESTORER, 0x7f952a1dfcb0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=14138, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, 0x7ffc0682c358, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn()                          = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f952a1dfcb0}, {SIG_DFL, [], SA_RESTORER, 0x7f952a1dfcb0}, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f952a1dfcb0}, {SIG_IGN, [], SA_RESTORER, 0x7f952a1dfcb0}, 8) = 0
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f952a1dfcb0}, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f952a1dfcb0}, 8) = 0
+execve("/home/ludwig125/.pyenv/libexec/pyenv-exec", ["/home/ludwig125/.pyenv/libexec/p"..., "python3", "./hello.py"], [/* 68 vars */]) = 0
+brk(0)                                  = 0x235e000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2db91f9000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=95589, ...}) = 0
+mmap(NULL, 95589, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f2db91e1000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0
+mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2db8c10000
+mprotect(0x7f2db8dce000, 2097152, PROT_NONE) = 0
+mmap(0x7f2db8fce000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7f2db8fce000
+mmap(0x7f2db8fd4000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2db8fd4000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2db91e0000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2db91de000
+arch_prctl(ARCH_SET_FS, 0x7f2db91de740) = 0
+mprotect(0x7f2db8fce000, 16384, PROT_READ) = 0
+mprotect(0x605000, 4096, PROT_READ)     = 0
+mprotect(0x7f2db91fb000, 4096, PROT_READ) = 0
+munmap(0x7f2db91e1000, 95589)           = 0
+brk(0)                                  = 0x235e000
+brk(0x237f000)                          = 0x237f000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=8191536, ...}) = 0
+mmap(NULL, 8191536, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f2db8440000
+close(3)                                = 0
+execve("/home/ludwig125/.pyenv/libexec/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "python3", "./hello.py"], [/* 68 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/ludwig125/.pyenv/plugins/python-build/bin/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "python3", "./hello.py"], [/* 68 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv/bin/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "python3", "./hello.py"], [/* 68 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv/shims/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "python3", "./hello.py"], [/* 68 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/ludwig125/.pyenv/shims/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "python3", "./hello.py"], [/* 68 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/ludwig125/.pyenv/bin/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "python3", "./hello.py"], [/* 68 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv/shims/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "python3", "./hello.py"], [/* 68 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/ludwig125/.pyenv/shims/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "python3", "./hello.py"], [/* 68 vars */]) = -1 ENOENT (No such file or directory)
+execve("/home/ludwig125/.pyenv/bin/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "python3", "./hello.py"], [/* 68 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/local/sbin/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "python3", "./hello.py"], [/* 68 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/local/bin/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "python3", "./hello.py"], [/* 68 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/sbin/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "python3", "./hello.py"], [/* 68 vars */]) = -1 ENOENT (No such file or directory)
+execve("/usr/bin/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "python3", "./hello.py"], [/* 68 vars */]) = -1 ENOENT (No such file or directory)
+execve("/sbin/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "python3", "./hello.py"], [/* 68 vars */]) = -1 ENOENT (No such file or directory)
+execve("/bin/bash", ["bash", "/home/ludwig125/.pyenv/libexec/p"..., "python3", "./hello.py"], [/* 68 vars */]) = 0
+brk(0)                                  = 0x17f9000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7a38dee000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=95589, ...}) = 0
+mmap(NULL, 95589, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7a38dd6000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\303\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=167096, ...}) = 0
+mmap(NULL, 2264288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7a389a5000
+mprotect(0x7f7a389ca000, 2093056, PROT_NONE) = 0
+mmap(0x7f7a38bc9000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7f7a38bc9000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\16\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14664, ...}) = 0
+mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7a387a1000
+mprotect(0x7f7a387a4000, 2093056, PROT_NONE) = 0
+mmap(0x7f7a389a3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f7a389a3000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7a38dd5000
+mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7a383d8000
+mprotect(0x7f7a38596000, 2097152, PROT_NONE) = 0
+mmap(0x7f7a38796000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7f7a38796000
+mmap(0x7f7a3879c000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7a3879c000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7a38dd3000
+arch_prctl(ARCH_SET_FS, 0x7f7a38dd3740) = 0
+mprotect(0x7f7a38796000, 16384, PROT_READ) = 0
+mprotect(0x7f7a389a3000, 4096, PROT_READ) = 0
+mprotect(0x7f7a38bc9000, 16384, PROT_READ) = 0
+mprotect(0x6ef000, 4096, PROT_READ)     = 0
+mprotect(0x7f7a38df0000, 4096, PROT_READ) = 0
+munmap(0x7f7a38dd6000, 95589)           = 0
+open("/dev/tty", O_RDWR|O_NONBLOCK)     = 3
+close(3)                                = 0
+brk(0)                                  = 0x17f9000
+brk(0x17fa000)                          = 0x17fa000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=8191536, ...}) = 0
+mmap(NULL, 8191536, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7a37c08000
+close(3)                                = 0
+brk(0x17fb000)                          = 0x17fb000
+brk(0x17fc000)                          = 0x17fc000
+getuid()                                = 1000
+getgid()                                = 1002
+geteuid()                               = 1000
+getegid()                               = 1002
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+brk(0x17fd000)                          = 0x17fd000
+open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7a38ded000
+read(3, "MemTotal:        4041380 kB\nMemF"..., 1024) = 1024
+close(3)                                = 0
+munmap(0x7f7a38ded000, 4096)            = 0
+brk(0x17fe000)                          = 0x17fe000
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f7a3840ecb0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f7a3840ecb0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f7a3840ecb0}, 8) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f7a3840ecb0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f7a3840ecb0}, {SIG_DFL, [], SA_RESTORER, 0x7f7a3840ecb0}, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f7a3840ecb0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f7a3840ecb0}, {SIG_DFL, [], SA_RESTORER, 0x7f7a3840ecb0}, 8) = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+rt_sigaction(SIGQUIT, {SIG_IGN, [], SA_RESTORER, 0x7f7a3840ecb0}, {SIG_DFL, [], SA_RESTORER, 0x7f7a3840ecb0}, 8) = 0
+uname({sys="Linux", node="ludwig125-virtual-machine", ...}) = 0
+brk(0x17ff000)                          = 0x17ff000
+brk(0x1800000)                          = 0x1800000
+brk(0x1801000)                          = 0x1801000
+brk(0x1802000)                          = 0x1802000
+brk(0x1803000)                          = 0x1803000
+brk(0x1804000)                          = 0x1804000
+stat("/home/ludwig125/git/work/linux_no_shikumi/chap2", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+getpid()                                = 14131
+open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0
+mmap(NULL, 26258, PROT_READ, MAP_SHARED, 3, 0) = 0x7f7a38de7000
+close(3)                                = 0
+brk(0x1805000)                          = 0x1805000
+getppid()                               = 14128
+stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/libexec/bash", 0x7ffe4efb2fa0) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/plugins/python-build/bin/bash", 0x7ffe4efb2fa0) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv/bin/bash", 0x7ffe4efb2fa0) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv/shims/bash", 0x7ffe4efb2fa0) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/shims/bash", 0x7ffe4efb2fa0) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/bin/bash", 0x7ffe4efb2fa0) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/plugins/pyenv-virtualenv/shims/bash", 0x7ffe4efb2fa0) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/shims/bash", 0x7ffe4efb2fa0) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/bin/bash", 0x7ffe4efb2fa0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/sbin/bash", 0x7ffe4efb2fa0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/bin/bash", 0x7ffe4efb2fa0) = -1 ENOENT (No such file or directory)
+stat("/usr/sbin/bash", 0x7ffe4efb2fa0)  = -1 ENOENT (No such file or directory)
+stat("/usr/bin/bash", 0x7ffe4efb2fa0)   = -1 ENOENT (No such file or directory)
+stat("/sbin/bash", 0x7ffe4efb2fa0)      = -1 ENOENT (No such file or directory)
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1002
+getuid()                                = 1000
+getgid()                                = 1002
+access("/bin/bash", X_OK)               = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1002
+getuid()                                = 1000
+getgid()                                = 1002
+access("/bin/bash", R_OK)               = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1002
+getuid()                                = 1000
+getgid()                                = 1002
+access("/bin/bash", X_OK)               = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1002
+getuid()                                = 1000
+getgid()                                = 1002
+access("/bin/bash", R_OK)               = 0
+brk(0x1806000)                          = 0x1806000
+getpgrp()                               = 14128
+rt_sigaction(SIGCHLD, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f7a3840ecb0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f7a3840ecb0}, 8) = 0
+getrlimit(RLIMIT_NPROC, {rlim_cur=31398, rlim_max=31398}) = 0
+brk(0x1807000)                          = 0x1807000
+brk(0x1808000)                          = 0x1808000
+brk(0x1809000)                          = 0x1809000
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+open("/home/ludwig125/.pyenv/libexec/pyenv-exec", O_RDONLY) = 3
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe4efb3280) = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "#!/usr/bin/env bash\n#\n# Summary:"..., 80) = 80
+lseek(3, 0, SEEK_SET)                   = 0
+getrlimit(RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=4*1024}) = 0
+fcntl(255, F_GETFD)                     = -1 EBADF (Bad file descriptor)
+dup2(3, 255)                            = 255
+close(3)                                = 0
+fcntl(255, F_SETFD, FD_CLOEXEC)         = 0
+fcntl(255, F_GETFL)                     = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+fstat(255, {st_mode=S_IFREG|0775, st_size=1210, ...}) = 0
+lseek(255, 0, SEEK_CUR)                 = 0
+brk(0x180a000)                          = 0x180a000
+brk(0x180b000)                          = 0x180b000
+read(255, "#!/usr/bin/env bash\n#\n# Summary:"..., 1210) = 1210
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+brk(0x180c000)                          = 0x180c000
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+pipe([3, 4])                            = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+lseek(255, -573, SEEK_CUR)              = 637
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f7a38dd3a10) = 14139
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGCHLD, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f7a3840ecb0}, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f7a3840ecb0}, 8) = 0
+close(4)                                = 0
+read(3, "3.5.4\n", 128)                 = 6
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=14139, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 14139
+wait4(-1, 0x7ffe4efb2518, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn()                          = 6
+read(3, "", 128)                        = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGINT, {0x4438d0, [], SA_RESTORER, 0x7f7a3840ecb0}, {SIG_DFL, [], SA_RESTORER, 0x7f7a3840ecb0}, 8) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f7a3840ecb0}, {0x4438d0, [], SA_RESTORER, 0x7f7a3840ecb0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+read(255, "PYENV_COMMAND=\"$1\"\n\nif [ -z \"$PY"..., 1210) = 573
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+brk(0x180d000)                          = 0x180d000
+pipe([3, 4])                            = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+lseek(255, -403, SEEK_CUR)              = 807
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f7a38dd3a10) = 14150
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGCHLD, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f7a3840ecb0}, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f7a3840ecb0}, 8) = 0
+close(4)                                = 0
+read(3, "/home/ludwig125/.pyenv/versions/"..., 128) = 50
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=14150, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 14150
+wait4(-1, 0x7ffe4efb2518, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn()                          = 50
+read(3, "", 128)                        = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGINT, {0x4438d0, [], SA_RESTORER, 0x7f7a3840ecb0}, {SIG_DFL, [], SA_RESTORER, 0x7f7a3840ecb0}, 8) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f7a3840ecb0}, {0x4438d0, [], SA_RESTORER, 0x7f7a3840ecb0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+read(255, "PYENV_BIN_PATH=\"${PYENV_COMMAND_"..., 1210) = 403
+pipe([3, 4])                            = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+lseek(255, -307, SEEK_CUR)              = 903
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f7a38dd3a10) = 14159
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGCHLD, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f7a3840ecb0}, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f7a3840ecb0}, 8) = 0
+close(4)                                = 0
+read(3, "/home/ludwig125/.pyenv/pyenv.d/e"..., 128) = 52
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=14159, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WNOHANG, NULL) = 14159
+wait4(-1, 0x7ffe4efb2698, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn()                          = 52
+read(3, "", 128)                        = 0
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGINT, {0x4438d0, [], SA_RESTORER, 0x7f7a3840ecb0}, {SIG_DFL, [], SA_RESTORER, 0x7f7a3840ecb0}, 8) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f7a3840ecb0}, {0x4438d0, [], SA_RESTORER, 0x7f7a3840ecb0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+read(255, "IFS=\"$OLDIFS\"\nfor script in \"${s"..., 1210) = 307
+open("/home/ludwig125/.pyenv/pyenv.d/exec/pip-rehash.bash", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0664, st_size=533, ...}) = 0
+read(3, "PYENV_PIP_REHASH_ROOT=\"${BASH_SO"..., 533) = 533
+close(3)                                = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+brk(0x180e000)                          = 0x180e000
+brk(0x180f000)                          = 0x180f000
+brk(0x1810000)                          = 0x1810000
+brk(0x1811000)                          = 0x1811000
+brk(0x1812000)                          = 0x1812000
+brk(0x1813000)                          = 0x1813000
+faccessat(AT_FDCWD, "/home/ludwig125/.pyenv/pyenv.d/exec/pip-rehash/python3", X_OK) = -1 ENOENT (No such file or directory)
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f7a3840ecb0}, {SIG_DFL, [], SA_RESTORER, 0x7f7a3840ecb0}, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7f7a3840ecb0}, {SIG_IGN, [], SA_RESTORER, 0x7f7a3840ecb0}, 8) = 0
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7f7a3840ecb0}, {0x4464f0, [], SA_RESTORER|SA_RESTART, 0x7f7a3840ecb0}, 8) = 0
+execve("/home/ludwig125/.pyenv/versions/3.5.4/bin/python3", ["python3", "./hello.py"], [/* 68 vars */]) = 0
+brk(0)                                  = 0x20e4000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc962d96000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=95589, ...}) = 0
+mmap(NULL, 95589, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fc962d7e000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0po\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=141574, ...}) = 0
+mmap(NULL, 2217264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc962958000
+mprotect(0x7fc962971000, 2093056, PROT_NONE) = 0
+mmap(0x7fc962b70000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7fc962b70000
+mmap(0x7fc962b72000, 13616, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fc962b72000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\16\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14664, ...}) = 0
+mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc962754000
+mprotect(0x7fc962757000, 2093056, PROT_NONE) = 0
+mmap(0x7fc962956000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fc962956000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libutil.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\17\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=10680, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc962d7d000
+mmap(NULL, 2105624, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc962551000
+mprotect(0x7fc962553000, 2093056, PROT_NONE) = 0
+mmap(0x7fc962752000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fc962752000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20V\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1071552, ...}) = 0
+mmap(NULL, 3166568, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc96224b000
+mprotect(0x7fc962350000, 2093056, PROT_NONE) = 0
+mmap(0x7fc96254f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x104000) = 0x7fc96254f000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0
+mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc961e82000
+mprotect(0x7fc962040000, 2097152, PROT_NONE) = 0
+mmap(0x7fc962240000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7fc962240000
+mmap(0x7fc962246000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fc962246000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc962d7c000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc962d7a000
+arch_prctl(ARCH_SET_FS, 0x7fc962d7a740) = 0
+mprotect(0x7fc962240000, 16384, PROT_READ) = 0
+mprotect(0x7fc96254f000, 4096, PROT_READ) = 0
+mprotect(0x7fc962752000, 4096, PROT_READ) = 0
+mprotect(0x7fc962956000, 4096, PROT_READ) = 0
+mprotect(0x7fc962b70000, 4096, PROT_READ) = 0
+mprotect(0x85e000, 4096, PROT_READ)     = 0
+mprotect(0x7fc962d98000, 4096, PROT_READ) = 0
+munmap(0x7fc962d7e000, 95589)           = 0
+set_tid_address(0x7fc962d7aa10)         = 14131
+set_robust_list(0x7fc962d7aa20, 24)     = 0
+futex(0x7fff853e2690, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, NULL, 7fc962d7a740) = -1 EAGAIN (Resource temporarily unavailable)
+rt_sigaction(SIGRTMIN, {0x7fc96295e9f0, [], SA_RESTORER|SA_SIGINFO, 0x7fc962968330}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0x7fc96295ea80, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fc962968330}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+brk(0)                                  = 0x20e4000
+brk(0x2105000)                          = 0x2105000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=8191536, ...}) = 0
+mmap(NULL, 8191536, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fc9616b2000
+close(3)                                = 0
+open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0
+mmap(NULL, 26258, PROT_READ, MAP_SHARED, 3, 0) = 0x7fc962d8f000
+close(3)                                = 0
+futex(0x7fc962245a70, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+open("/dev/urandom", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFD)                       = 0x1 (flags FD_CLOEXEC)
+read(3, "%\262\256\260V\376?Y/+(\235@\357\334d\221\323\307\267+\350\234P", 24) = 24
+close(3)                                = 0
+ioctl(0, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc962d3a000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc962cfa000
+brk(0x2126000)                          = 0x2126000
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 8), ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/bin/python3", {st_mode=S_IFREG|0755, st_size=12491419, ...}) = 0
+readlink("/home/ludwig125/.pyenv/versions/3.5.4/bin/python3", "python3.5", 4096) = 9
+readlink("/home/ludwig125/.pyenv/versions/3.5.4/bin/python3.5", 0x7fff853cf370, 4096) = -1 EINVAL (Invalid argument)
+open("/home/ludwig125/.pyenv/versions/3.5.4/bin/pyvenv.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/ludwig125/.pyenv/versions/3.5.4/pyvenv.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/versions/3.5.4/bin/Modules/Setup", 0x7fff853d8420) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/versions/3.5.4/bin/lib/python3.5/os.py", 0x7fff853d0300) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/versions/3.5.4/bin/lib/python3.5/os.pyc", 0x7fff853d0300) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/os.py", {st_mode=S_IFREG|0644, st_size=37033, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/bin/pybuilddir.txt", 0x7fff853d8420) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/versions/3.5.4/bin/lib/python3.5/lib-dynload", 0x7fff853d8420) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc962cba000
+munmap(0x7fc962cba000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc962cba000
+munmap(0x7fc962cba000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc962cba000
+munmap(0x7fc962cba000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc962cba000
+brk(0x2147000)                          = 0x2147000
+open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc962d8e000
+read(3, "MemTotal:        4041380 kB\nMemF"..., 1024) = 1024
+close(3)                                = 0
+munmap(0x7fc962d8e000, 4096)            = 0
+brk(0x216e000)                          = 0x216e000
+sigaltstack({ss_sp=0x214d030, ss_flags=0, ss_size=8192}, {ss_sp=0, ss_flags=SS_DISABLE, ss_size=0}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python35.zip", 0x7fff853e1170) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python35.zip", 0x7fff853e0b90) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 206 entries */, 32768)   = 6808
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings/__init__.cpython-35m-x86_64-linux-gnu.so", 0x7fff853e0e50) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings/__init__.abi3.so", 0x7fff853e0e50) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings/__init__.so", 0x7fff853e0e50) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5067, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5067, ...}) = 0
+open("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings/__pycache__/__init__.cpython-35.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3857, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3857, ...}) = 0
+read(3, "\27\r\r\n\26255Z\313\23\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 3858) = 3857
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/codecs.py", {st_mode=S_IFREG|0644, st_size=36231, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/codecs.py", {st_mode=S_IFREG|0644, st_size=36231, ...}) = 0
+open("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/__pycache__/codecs.cpython-35.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=35321, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=35321, ...}) = 0
+read(3, "\27\r\r\n\26155Z\207\215\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0:\0\0\0@\0\0"..., 35322) = 35321
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc962c7a000
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+brk(0x218f000)                          = 0x218f000
+getdents(3, /* 127 entries */, 32768)   = 4304
+getdents(3, /* 0 entries */, 32768)     = 0
+brk(0x2187000)                          = 0x2187000
+close(3)                                = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15542, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15542, ...}) = 0
+open("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings/__pycache__/aliases.cpython-35.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=7573, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=7573, ...}) = 0
+read(3, "\27\r\r\n\26255Z\266<\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\204\2\0\0@\0\0"..., 7574) = 7573
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}) = 0
+open("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings/__pycache__/utf_8.cpython-35.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1717, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1717, ...}) = 0
+read(3, "\27\r\r\n\26255Z\355\3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 1718) = 1717
+read(3, "", 1)                          = 0
+close(3)                                = 0
+rt_sigaction(SIGPIPE, {SIG_IGN, [], SA_RESTORER, 0x7fc962968330}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGXFSZ, {SIG_IGN, [], SA_RESTORER, 0x7fc962968330}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGHUP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGILL, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTRAP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGABRT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGBUS, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGFPE, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGKILL, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGUSR1, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGSEGV, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGUSR2, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGPIPE, NULL, {SIG_IGN, [], SA_RESTORER, 0x7fc962968330}, 8) = 0
+rt_sigaction(SIGALRM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTERM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGSTKFLT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGCHLD, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGCONT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGSTOP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTSTP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTTIN, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTTOU, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGURG, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGXCPU, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGXFSZ, NULL, {SIG_IGN, [], SA_RESTORER, 0x7fc962968330}, 8) = 0
+rt_sigaction(SIGVTALRM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGPROF, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGWINCH, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGIO, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGPWR, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGSYS, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_2, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_3, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_4, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_5, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_6, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_7, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_8, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_9, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_10, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_11, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_12, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_13, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_14, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_15, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_16, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_17, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_18, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_19, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_20, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_21, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_22, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_23, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_24, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_25, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_26, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_27, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_28, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_29, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_30, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_31, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_32, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, {0x421740, [], SA_RESTORER, 0x7fc962968330}, {SIG_DFL, [], 0}, 8) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings/latin_1.py", {st_mode=S_IFREG|0644, st_size=1264, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings/latin_1.py", {st_mode=S_IFREG|0644, st_size=1264, ...}) = 0
+open("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/encodings/__pycache__/latin_1.cpython-35.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2029, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2029, ...}) = 0
+read(3, "\27\r\r\n\26255Z\360\4\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 2030) = 2029
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/io.py", {st_mode=S_IFREG|0644, st_size=3396, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/io.py", {st_mode=S_IFREG|0644, st_size=3396, ...}) = 0
+open("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/__pycache__/io.cpython-35.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3476, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3476, ...}) = 0
+read(3, "\27\r\r\n\26155ZD\r\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\22\0\0\0@\0\0"..., 3477) = 3476
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/abc.py", {st_mode=S_IFREG|0644, st_size=8628, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/abc.py", {st_mode=S_IFREG|0644, st_size=8628, ...}) = 0
+open("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/__pycache__/abc.cpython-35.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=7883, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=7883, ...}) = 0
+read(3, "\27\r\r\n\26155Z\264!\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 7884) = 7883
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/_weakrefset.py", {st_mode=S_IFREG|0644, st_size=5705, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/_weakrefset.py", {st_mode=S_IFREG|0644, st_size=5705, ...}) = 0
+open("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/__pycache__/_weakrefset.cpython-35.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=8439, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=8439, ...}) = 0
+read(3, "\27\r\r\n\26155ZI\26\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0@\0\0"..., 8440) = 8439
+read(3, "", 1)                          = 0
+close(3)                                = 0
+dup(0)                                  = 3
+close(3)                                = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 8), ...}) = 0
+ioctl(0, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(0, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+ioctl(0, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(0, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+dup(1)                                  = 3
+close(3)                                = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 8), ...}) = 0
+ioctl(1, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(1, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+ioctl(1, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(1, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+dup(2)                                  = 3
+close(3)                                = 0
+fstat(2, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 8), ...}) = 0
+ioctl(2, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(2, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+ioctl(2, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(2, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(2, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/site.py", {st_mode=S_IFREG|0644, st_size=21241, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/site.py", {st_mode=S_IFREG|0644, st_size=21241, ...}) = 0
+open("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/__pycache__/site.cpython-35.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=17586, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=17586, ...}) = 0
+read(3, "\27\r\r\n\26155Z\371R\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0@\0\0"..., 17587) = 17586
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/os.py", {st_mode=S_IFREG|0644, st_size=37033, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/os.py", {st_mode=S_IFREG|0644, st_size=37033, ...}) = 0
+open("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/__pycache__/os.cpython-35.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=31310, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=31310, ...}) = 0
+read(3, "\27\r\r\n\26155Z\251\220\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0000\0\0\0@\0\0"..., 31311) = 31310
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x21a8000)                          = 0x21a8000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc962c3a000
+munmap(0x7fc962c3a000, 262144)          = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc962c3a000
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/stat.py", {st_mode=S_IFREG|0644, st_size=5038, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/stat.py", {st_mode=S_IFREG|0644, st_size=5038, ...}) = 0
+open("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/__pycache__/stat.cpython-35.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4180, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=4180, ...}) = 0
+read(3, "\27\r\r\n\26155Z\256\23\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 4181) = 4180
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/posixpath.py", {st_mode=S_IFREG|0644, st_size=14911, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/posixpath.py", {st_mode=S_IFREG|0644, st_size=14911, ...}) = 0
+open("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/__pycache__/posixpath.cpython-35.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=11172, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=11172, ...}) = 0
+read(3, "\27\r\r\n\26155Z?:\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0&\0\0\0@\0\0"..., 11173) = 11172
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/genericpath.py", {st_mode=S_IFREG|0644, st_size=4364, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/genericpath.py", {st_mode=S_IFREG|0644, st_size=4364, ...}) = 0
+open("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/__pycache__/genericpath.cpython-35.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3950, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3950, ...}) = 0
+read(3, "\27\r\r\n\26155Z\f\21\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 3951) = 3950
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/_collections_abc.py", {st_mode=S_IFREG|0644, st_size=24794, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/_collections_abc.py", {st_mode=S_IFREG|0644, st_size=24794, ...}) = 0
+open("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/__pycache__/_collections_abc.cpython-35.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=29834, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=29834, ...}) = 0
+read(3, "\27\r\r\n\26155Z\332`\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\26\0\0\0@\0\0"..., 29835) = 29834
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/_sitebuiltins.py", {st_mode=S_IFREG|0644, st_size=3115, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/_sitebuiltins.py", {st_mode=S_IFREG|0644, st_size=3115, ...}) = 0
+open("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/__pycache__/_sitebuiltins.cpython-35.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3687, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3687, ...}) = 0
+read(3, "\27\r\r\n\26155Z+\f\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 3688) = 3687
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc962bfa000
+stat("/home/ludwig125/.pyenv/versions/3.5.4/bin/pyvenv.cfg", 0x7fff853e0d70) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/versions/3.5.4/pyvenv.cfg", 0x7fff853e0d70) = -1 ENOENT (No such file or directory)
+geteuid()                               = 1000
+getuid()                                = 1000
+getegid()                               = 1002
+getgid()                                = 1002
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/sysconfig.py", {st_mode=S_IFREG|0644, st_size=24339, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/sysconfig.py", {st_mode=S_IFREG|0644, st_size=24339, ...}) = 0
+open("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/__pycache__/sysconfig.cpython-35.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=16871, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=16871, ...}) = 0
+read(3, "\27\r\r\n\26155Z\23_\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\31\0\0\0@\0\0"..., 16872) = 16871
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 200704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc962bc9000
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/ludwig125", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/ludwig125/.pyenv", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lstat("/home/ludwig125/.pyenv/versions", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lstat("/home/ludwig125/.pyenv/versions/3.5.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/ludwig125/.pyenv/versions/3.5.4/bin", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/ludwig125/.pyenv/versions/3.5.4/bin/python3", {st_mode=S_IFLNK|0777, st_size=9, ...}) = 0
+readlink("/home/ludwig125/.pyenv/versions/3.5.4/bin/python3", "python3.5", 4096) = 9
+lstat("/home/ludwig125/.pyenv/versions/3.5.4/bin/python3.5", {st_mode=S_IFREG|0755, st_size=12491419, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/bin/Modules/Setup.dist", 0x7fff853dfa40) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/versions/3.5.4/bin/Modules/Setup.local", 0x7fff853dfa40) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/_sysconfigdata.py", {st_mode=S_IFREG|0644, st_size=20227, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/_sysconfigdata.py", {st_mode=S_IFREG|0644, st_size=20227, ...}) = 0
+open("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/__pycache__/_sysconfigdata.cpython-35.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=19788, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=19788, ...}) = 0
+read(3, "\27\r\r\n\26155Z\3O\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\352\4\0\0@\0\0"..., 19789) = 19788
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x21c9000)                          = 0x21c9000
+brk(0x21c1000)                          = 0x21c1000
+brk(0x21c0000)                          = 0x21c0000
+lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/ludwig125", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/ludwig125/.pyenv", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lstat("/home/ludwig125/.pyenv/versions", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+lstat("/home/ludwig125/.pyenv/versions/3.5.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/ludwig125/.pyenv/versions/3.5.4/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/config-3.5m", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.local/lib/python3.5/site-packages", 0x7fff853e0f80) = -1 ENOENT (No such file or directory)
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/site-packages", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 48 entries */, 32768)    = 1864
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/plat-linux", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/plat-linux", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/plat-linux", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/plat-linux", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 8 entries */, 32768)     = 240
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/lib-dynload", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 63 entries */, 32768)    = 3928
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/site-packages", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 48 entries */, 32768)    = 1864
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/plat-linux", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/lib-dynload", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ludwig125/.pyenv/versions/3.5.4/lib/python3.5/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+readlink("./hello.py", 0x7fff853d1510, 4096) = -1 EINVAL (Invalid argument)
+getcwd("/home/ludwig125/git/work/linux_no_shikumi/chap2", 4096) = 48
+lstat("/home/ludwig125/git/work/linux_no_shikumi/chap2/hello.py", {st_mode=S_IFREG|0664, st_size=21, ...}) = 0
+stat("./hello.py", {st_mode=S_IFREG|0664, st_size=21, ...}) = 0
+open("./hello.py", O_RDONLY)            = 3
+ioctl(3, FIOCLEX)                       = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=21, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc962d8e000
+fstat(3, {st_mode=S_IFREG|0664, st_size=21, ...}) = 0
+lseek(3, 18446744073709547520, SEEK_SET) = -1 EINVAL (Invalid argument)
+close(3)                                = 0
+munmap(0x7fc962d8e000, 4096)            = 0
+stat("./hello.py", {st_mode=S_IFREG|0664, st_size=21, ...}) = 0
+open("./hello.py", O_RDONLY)            = 3
+ioctl(3, FIOCLEX)                       = 0
+fstat(3, {st_mode=S_IFREG|0664, st_size=21, ...}) = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7fff853e24c0) = -1 ENOTTY (Inappropriate ioctl for device)
+fstat(3, {st_mode=S_IFREG|0664, st_size=21, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc962d8e000
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "print(\"hello world\")\n", 4096) = 21
+lseek(3, 21, SEEK_SET)                  = 21
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x7fc962d8e000, 4096)            = 0
+write(1, "hello world\n", 12)           = 12
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7fc962968330}, {0x421740, [], SA_RESTORER, 0x7fc962968330}, 8) = 0
+sigaltstack(NULL, {ss_sp=0x214d030, ss_flags=0, ss_size=8192}) = 0
+sigaltstack({ss_sp=0, ss_flags=SS_DISABLE, ss_size=0}, NULL) = 0
+brk(0x21b9000)                          = 0x21b9000
+exit_group(0)                           = ?
++++ exited with 0 +++
