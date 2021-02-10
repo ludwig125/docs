@@ -15,6 +15,11 @@ https://docs.microsoft.com/ja-jp/windows/wsl/install-win10
 基本的に以下に従う
 https://www.atmarkit.co.jp/ait/articles/1608/08/news039.html
 
+=> 2021/02/11追記。この記事会員限定になってた
+
+<details><summary>
+18.04Versionの確認</summary><div>
+
 versionは18.04
 ```
 $cat /etc/os-release
@@ -31,6 +36,170 @@ PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-poli
 VERSION_CODENAME=bionic
 UBUNTU_CODENAME=bionic
 ```
+
+</div></details>
+
+
+<details><summary>
+18.04から20.04.2 LTSにアップデートしたときのメモ</summary><div>
+
+変更前のversionは18.04
+```
+$cat /etc/os-release
+NAME="Ubuntu"
+VERSION="18.04.4 LTS (Bionic Beaver)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 18.04.4 LTS"
+VERSION_ID="18.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=bionic
+UBUNTU_CODENAME=bionic
+```
+
+参考にさせていただいた記事
+
+- https://qiita.com/hitobb/items/2ee9b1c2c49760976e0f
+
+#### 1. リポジトリ一覧の更新、パッケージの更新
+
+```
+sudo apt update
+sudo apt upgrade
+```
+
+#### トラブル
+
+以下のエラーが出たのでgrafanaのパッケージ２つを再設定した
+```
+dpkg: パッケージ grafana の処理中にエラーが発生しました (--configure):
+ installed grafana package post-installation script subprocess returned error exit status 1
+man-db (2.8.3-2ubuntu0.1) のトリガを処理しています ...
+ERROR: Cannot create report: [Errno 17] File exists: '/var/crash/grafana.0.crash'
+
+略
+処理中にエラーが発生しました:
+ grafana-enterprise
+ grafana
+
+```
+
+以下の記事を参考に再設定した
+
+- https://qiita.com/yukari-n/items/d1b17bd37036f120153c
+
+##### grafanaの再設定（grafana-enterpriseも同様にした）
+
+```
+[~] $sudo dpkg --audit grafana
+以下のパッケージは最初の設定中に問題が発生したため、設定が終了していません。
+dpkg --configure <パッケージ> か dselect で設定 (configure) メニューオプショ
+ンを使って設定作業を再試行しなければなりません:
+ grafana              Grafana
+```
+
+設定できない
+
+```
+[~] $sudo dpkg --configure grafana
+grafana (7.4.0) を設定しています ...
+Restarting grafana-server service...System has not been booted with systemd as init system (PID 1). Can't operate.
+dpkg: パッケージ grafana の処理中にエラーが発生しました (--configure):
+ installed grafana package post-installation script subprocess returned error exit status 1
+処理中にエラーが発生しました:
+ grafana
+```
+
+設定ファイルを消すと問題なく再設定できた
+```
+[~] $ls /var/lib/dpkg/info/grafana.postinst
+/var/lib/dpkg/info/grafana.postinst*
+[~] $sudo rm /var/lib/dpkg/info/grafana.postinst
+rm: 通常ファイル '/var/lib/dpkg/info/grafana.postinst' を削除しますか? y
+[~] $sudo dpkg --configure grafana
+grafana (7.4.0) を設定しています ...
+[~] $
+[~] $sudo dpkg --audit grafana
+[~] $
+```
+
+#### 2. Ubuntuのバージョンアップ
+
+```
+sudo apt install update-manager
+sudo apt dist-upgrade
+```
+
+これでバージョン更新
+
+```
+sudo do-release-upgrade -d
+```
+
+> Checking for a new Ubuntu release
+> You have not rebooted after updating a package which requires a reboot. Please reboot before upgrading.
+
+と出たので、powerShellを起動して、WSLを再起動
+
+PowerShellで以下を実行
+
+Ubuntuディストリビューションの確認
+```
+PS C:\WINDOWS\system32> wsl -l
+Linux 用 Windows サブシステム ディストリビューション:
+Ubuntu (既定)
+docker-desktop-data
+docker-desktop
+```
+
+```
+PS C:\WINDOWS\system32> wsl -t Ubuntu
+PS C:\WINDOWS\system32>
+```
+
+これでWSLが再起動する
+
+#### 2.つづき
+
+
+あらためて実行
+```
+sudo do-release-upgrade -d
+```
+
+#### 3. ファイルの更新確認
+
+![image](https://user-images.githubusercontent.com/18366858/107575018-afe33600-6c32-11eb-9066-241a035fbd18.png)
+
+のような画面が出たので、一応元のファイルをバックアップしておいて、最新にした
+（あとでバックアップ使わなくても問題なかった）
+
+#### 4. バージョン確認
+
+全部終わったのでバージョン確認
+
+```
+[~] $cat  /etc/os-release
+NAME="Ubuntu"
+VERSION="20.04.2 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.2 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+[~] $
+```
+
+
+</div></details>
 
 ### wslttyのインストール
 
