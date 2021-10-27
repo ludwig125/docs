@@ -750,6 +750,8 @@ VSCodeで `Ctrl+Shift+p` で「Remote-WSL: New Window using Distro 」を選ん�
 
 参考：https://github.com/microsoft/vscode-docs-archive/blob/master/docs/editor/integrated-terminal.md
 
+https://code.visualstudio.com/docs/getstarted/keybindings#_basic-editing
+
 ```
 // 既定値を上書きするには、このファイル内にキー バインドを挿入しますauto[]
 [
