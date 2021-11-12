@@ -1,11 +1,12 @@
-# WSL環境の構築メモ
+# WSL 環境の構築メモ
 
-WSLで開発環境を構築したときのメモ
+WSL で開発環境を構築したときのメモ
 詳しい導入手順はいくらでもあるので自分なりに気になった点だけ載せる
 
-## WSLインストール
+## WSL インストール
 
 https://docs.microsoft.com/ja-jp/windows/wsl/install-win10
+
 - 公式
 
 ## Ubuntu
@@ -15,12 +16,13 @@ https://docs.microsoft.com/ja-jp/windows/wsl/install-win10
 基本的に以下に従う
 https://www.atmarkit.co.jp/ait/articles/1608/08/news039.html
 
-=> 2021/02/11追記。この記事会員限定になってた
+=> 2021/02/11 追記。この記事会員限定になってた
 
 <details><summary>
 18.04Versionの確認</summary><div>
 
-versionは18.04
+version は 18.04
+
 ```
 $cat /etc/os-release
 NAME="Ubuntu"
@@ -39,11 +41,11 @@ UBUNTU_CODENAME=bionic
 
 </div></details>
 
-
 <details><summary>
 18.04から20.04.2 LTSにアップデートしたときのメモ</summary><div>
 
-変更前のversionは18.04
+変更前の version は 18.04
+
 ```
 $cat /etc/os-release
 NAME="Ubuntu"
@@ -73,7 +75,8 @@ sudo apt upgrade
 
 #### トラブル
 
-以下のエラーが出たのでgrafanaのパッケージ２つを再設定した
+以下のエラーが出たので grafana のパッケージ２つを再設定した
+
 ```
 dpkg: パッケージ grafana の処理中にエラーが発生しました (--configure):
  installed grafana package post-installation script subprocess returned error exit status 1
@@ -91,7 +94,7 @@ ERROR: Cannot create report: [Errno 17] File exists: '/var/crash/grafana.0.crash
 
 - https://qiita.com/yukari-n/items/d1b17bd37036f120153c
 
-##### grafanaの再設定（grafana-enterpriseも同様にした）
+##### grafana の再設定（grafana-enterprise も同様にした）
 
 ```
 [~] $sudo dpkg --audit grafana
@@ -114,6 +117,7 @@ dpkg: パッケージ grafana の処理中にエラーが発生しました (--c
 ```
 
 設定ファイルを消すと問題なく再設定できた
+
 ```
 [~] $ls /var/lib/dpkg/info/grafana.postinst
 /var/lib/dpkg/info/grafana.postinst*
@@ -126,7 +130,7 @@ grafana (7.4.0) を設定しています ...
 [~] $
 ```
 
-#### 2. Ubuntuのバージョンアップ
+#### 2. Ubuntu のバージョンアップ
 
 ```
 sudo apt install update-manager
@@ -142,11 +146,12 @@ sudo do-release-upgrade -d
 > Checking for a new Ubuntu release
 > You have not rebooted after updating a package which requires a reboot. Please reboot before upgrading.
 
-と出たので、powerShellを起動して、WSLを再起動
+と出たので、powerShell を起動して、WSL を再起動
 
-PowerShellで以下を実行
+PowerShell で以下を実行
 
-Ubuntuディストリビューションの確認
+Ubuntu ディストリビューションの確認
+
 ```
 PS C:\WINDOWS\system32> wsl -l
 Linux 用 Windows サブシステム ディストリビューション:
@@ -160,12 +165,12 @@ PS C:\WINDOWS\system32> wsl -t Ubuntu
 PS C:\WINDOWS\system32>
 ```
 
-これでWSLが再起動する
+これで WSL が再起動する
 
 #### 2.つづき
 
-
 あらためて実行
+
 ```
 sudo do-release-upgrade -d
 ```
@@ -198,17 +203,15 @@ UBUNTU_CODENAME=focal
 [~] $
 ```
 
-
 </div></details>
 
-### wslttyのインストール
+### wsltty のインストール
 
 <details><summary>自分は後で結局wslttyからWindowsTerminalに変えたので折り畳み</summary><div>
 
-
 https://www.atmarkit.co.jp/ait/articles/1812/13/news031.html
 
-wslttyのオプション
+wsltty のオプション
 
 ![image](https://user-images.githubusercontent.com/18366858/83340538-6e189680-a314-11ea-9d2e-aa1bb0e74ebb.png)
 
@@ -216,32 +219,32 @@ wslttyのオプション
 
 - 「Ctrl+Shift+文字ショートカット」にチェックを入れることで、「Ctrl+Shift+C」でコピペ、「Ctrl+Shift+V」でペーストできるようになる
 
-
 </div></details>
 
+## WSL のホームディレクトリ変更
 
-## WSLのホームディレクトリ変更
+**WSL のホームディレクトリを以下の方法で/mnt/c 以下にしていたが、WSL2 では読み込み保存が遅くなるみたいなので/home/USER 以下に戻した**
 
-**WSLのホームディレクトリを以下の方法で/mnt/c以下にしていたが、WSL2では読み込み保存が遅くなるみたいなので/home/USER以下に戻した**
-
-そのため以下の方法はWSL2以降ではしないほうが良さそう
+そのため以下の方法は WSL2 以降ではしないほうが良さそう
 
 <details><summary>WindowsTerminal設定</summary><div>
 
+WSL のホームディレクトリは最初は`/home/<user名>` にあってわかりにくいので、C ドライブ直下に変更する
 
-WSLのホームディレクトリは最初は`/home/<user名>` にあってわかりにくいので、Cドライブ直下に変更する
+事前に Windows 側で C ドライブ直下に`wsl` という名前でフォルダを作っておいて、(`C:\wsl`)
+WSL 側で `/etc/passwd` を編集して
 
-事前にWindows側でCドライブ直下に`wsl` という名前でフォルダを作っておいて、(`C:\wsl`)
-WSL側で `/etc/passwd` を編集して
 ```
 ludwig125:x:1000:1000:,,,:/home/ludwig125:/bin/bash
 ```
+
 を以下のように変更
+
 ```
 ludwig125:x:1000:1000:,,,:/mnt/c/wsl:/bin/bash
 ```
 
-WSLを開きなおすと、次回以降は`/mnt/c`がホームディレクトリになる
+WSL を開きなおすと、次回以降は`/mnt/c`がホームディレクトリになる
 
 参考
 
@@ -355,9 +358,10 @@ https://qiita.com/rubytomato@github/items/e88cab84f36e44797cf2
 }
 
 ```
+
 </div></details>
 
-## シェルをbashからzshに変更
+## シェルを bash から zsh に変更
 
 ```
 sudo apt install zsh
@@ -366,13 +370,15 @@ sudo apt install zsh
 その他
 
 参考
+
 - https://qiita.com/mu_tomoya/items/4c9cf14a48af27907f86
 
-## git設定
+## git 設定
 
-git自体はデフォルトで入っていたが2.17.1だった
+git 自体はデフォルトで入っていたが 2.17.1 だった
 
 一応インストール手順記載
+
 ```
 sudo apt-get update
 sudo apt-get install git
@@ -383,9 +389,10 @@ $git version
 git version 2.17.1
 ```
 
-これだと最新のswitch, restoreオプションが使えないのでアップグレードする
+これだと最新の switch, restore オプションが使えないのでアップグレードする
 
 PPA (Personal Package Archive) で最新バージョンを提供されている方がいるらしいのでそれを使わせていただく
+
 ```
 $ sudo add-apt-repository ppa:git-core/ppa
 $ sudo apt update
@@ -393,16 +400,16 @@ $ sudo apt install git
 ```
 
 version
+
 ```
 $git version
 git version 2.27.0
 ```
 
-
 自分の情報は以下で初期設定
 
 - これがないとコミット情報に名前が出ない
-- メール登録しておけば万が一Gitに秘密鍵をUploadしてしまったときに「秘密鍵っぽいよ危ないぞ」って連絡くれる
+- メール登録しておけば万が一 Git に秘密鍵を Upload してしまったときに「秘密鍵っぽいよ危ないぞ」って連絡くれる
 
 ```
 git config --global user.name [名前]
@@ -410,14 +417,17 @@ git config --global user.email [メールアドレス]
 ```
 
 参考
+
 - https://help.github.com/ja/github/using-git/setting-your-username-in-git
 
-自分はgitconfigにaliasと一緒にまとめて書いている
+自分は gitconfig に alias と一緒にまとめて書いている
 
-### githubと連携するためにssh鍵の登録
+### github と連携するために ssh 鍵の登録
 
 #### 鍵の作成
+
 自分はすでに鍵を持っていたので必要なかったけど、鍵を作るとしたらこれ
+
 ```
 ssh-keygen -t rsa -C <メールアドレス>
 ```
@@ -426,14 +436,15 @@ ssh-keygen -t rsa -C <メールアドレス>
 
 **鍵を置く場所がちょっと困った点だった**
 
-**以下、前述のWSLのホームディレクトリを変えたために生じた問題なので、WSL2以降は問題ない**
+**以下、前述の WSL のホームディレクトリを変えたために生じた問題なので、WSL2 以降は問題ない**
 
-sshの秘密鍵は前述の設定で、パーミッションを400(`-r--------`)などにしないとSSHの際に怒られる
+ssh の秘密鍵は前述の設定で、パーミッションを 400(`-r--------`)などにしないと SSH の際に怒られる
 
-~~自分の場合、前述の設定でホームディレクトリを`/mnt/c`以下にしていたので、chmodでパーミッション変更ができなかった~~
+~~自分の場合、前述の設定でホームディレクトリを`/mnt/c`以下にしていたので、chmod でパーミッション変更ができなかった~~
 
 なので、一旦デフォルトのホームディレクトリである、
 `/home/<user名>`に移って、そこに `.ssh`　ディレクトリを置いて、その中に秘密鍵および公開鍵を置くことにした
+
 ```
 $ls -l /home/ludwig125/.ssh
 total 4
@@ -445,18 +456,19 @@ total 4
 
 #### 鍵の自動読み込み設定
 
-上で作った鍵を使ってgithubとやり取りをするには、
-ssh-agentを立ち上げた後にssh-addで鍵を登録すればいいのだけど、毎回やりたくないので、`.bashrc`もしくは `.zshrc`に以下を追加する
-
+上で作った鍵を使って github とやり取りをするには、
+ssh-agent を立ち上げた後に ssh-add で鍵を登録すればいいのだけど、毎回やりたくないので、`.bashrc`もしくは `.zshrc`に以下を追加する
 
 .zshrc
+
 ```
 #SSH
 eval `ssh-agent` > /dev/null
 ssh-add /home/ユーザ名/.ssh/id_rsa >& /dev/null
 ```
 
-これで読み込みなおすとSSHが通る
+これで読み込みなおすと SSH が通る
+
 ```
 $ source .zshrc
 $ ssh -T git@github.com
@@ -466,19 +478,20 @@ Hi ludwig125! You've successfully authenticated, but GitHub does not provide she
 ```
 
 参考
+
 - https://qiita.com/satto_sann/items/9d95241af81dc4466ee1
 - https://qiita.com/sshojiro/items/60982f06c1a0ba88c160
 - https://qiita.com/yoshioms/items/6e2039d58fe19ab61b5f
 
-
-## defaultのPythonをPython3に変更
+## default の Python を Python3 に変更
 
 ```
 $python3 --version
 Python 3.6.9
 ```
 
-python3.7を入れたかったら以下
+python3.7 を入れたかったら以下
+
 ```
 $sudo apt update
 $sudo apt install python3.7
@@ -487,49 +500,57 @@ $python3.7 --version
 Python 3.7.5
 ```
 
-.zshrc(または.bashrc)に以下のaliasを追加
+.zshrc(または.bashrc)に以下の alias を追加
 
- - ここではpython3.6を使う例を書く
+- ここでは python3.6 を使う例を書く
 
 ```
 alias python=/usr/bin/python3.6
 ```
 
-.zshrcの再読み込み
+.zshrc の再読み込み
+
 ```
 source ~/.zshrc
 ```
 
+## Go 言語の環境構築
 
-## Go言語の環境構築
+apt install では 1.10 が入った
 
-apt installでは1.10が入った
 ```
 $apt-get install golang
 ```
+
 ```
 $go version
 go version go1.10.4 linux/amd64
 ```
 
-最新は1.14.4(2020/6/3時点)なので、これにしたい
+最新は 1.14.4(2020/6/3 時点)なので、これにしたい
 
 公式
+
 - https://golang.org/dl/
 
 download
+
 ```
 $wget https://dl.google.com/go/go1.14.4.linux-amd64.tar.gz
 ```
 
 `-C`で`/usr/local`以下に解凍
+
 ```
 $which go
 /usr/bin/go
 $sudo tar -C /usr/local -xzf go1.14.4.linux-amd64.tar.gz
 ```
+
 パスを通す
-- 自分の環境ではGOPATHをCドライブ直下に作っている
+
+- 自分の環境では GOPATH を C ドライブ直下に作っている
+
 ```
 $export GOROOT=/usr/local/go
 $export GOPATH=/home/ludwig125/go
@@ -539,24 +560,26 @@ $export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 ```
 
 バージョン確認
+
 ```
 $go version
 go version go1.14.4 linux/amd64
 ```
 
 後片付け
+
 ```
 $rm -rf go1.14.4.linux-amd64.tar.gz
 ```
 
 参考
+
 - https://ludwig125.hatenablog.com/entry/2019/08/16/055234
 - https://xn--go-hh0g6u.com/doc/code.html
 
+## Docker のインストールと実行
 
-## Dockerのインストールと実行
-
-#### install手順
+#### install 手順
 
 - [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/) に従う
 
@@ -577,9 +600,9 @@ $ sudo add-apt-repository \
 $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
-#### WSLでDockerを起動させる時の注意点
+#### WSL で Docker を起動させる時の注意点
 
-普通にWindowsTerminalで以下を実行しても起動してくれない
+普通に WindowsTerminal で以下を実行しても起動してくれない
 
 - `Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?`が出る
 
@@ -592,7 +615,7 @@ $sudo docker ps
 Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
 ```
 
-そこで、以下のように、Windowsキーから「管理者として実行」で起動して、
+そこで、以下のように、Windows キーから「管理者として実行」で起動して、
 
 ![image](https://user-images.githubusercontent.com/18366858/92527936-d73c6e00-f262-11ea-992e-6425a2e3610c.png)
 
@@ -672,7 +695,6 @@ Live Restore Enabled: false
 [~] $
 ```
 
-
 ```
 [~] $sudo docker container ls --all
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
@@ -696,7 +718,7 @@ root@e81e1c28abe6:/go#
 
 #### 参考
 
-dockerをWSLで動かす
+docker を WSL で動かす
 
 - https://www.reddit.com/r/bashonubuntuonwindows/comments/8cvr27/docker_is_running_natively_on_wsl/
 
@@ -711,8 +733,6 @@ cgroup
 - https://man7.org/linux/man-pages/man7/cgroups.7.html
 - https://thinkit.co.jp/article/17269
 
-
-
 ## Visual Studio Code(vs code)のインストール
 
 https://code.visualstudio.com/docs/remote/wsl
@@ -725,13 +745,15 @@ https://qiita.com/nj_ryoo0/items/a42c47436b77310f5430
 
 #### VSCode インストール
 
-1. windows側にVSCodeインストール
+1. windows 側に VSCode インストール
+
 - https://code.visualstudio.com/
 
-2. vs codeを開いて、Remote Developmentの拡張機能をインストール
+2. vs code を開いて、Remote Development の拡張機能をインストール
+
 - https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
 
-3. WSL側で `/mnt/c(Cドライブ直下)` にいって、以下でVSCodeを開く
+3. WSL 側で `/mnt/c(Cドライブ直下)` にいって、以下で VSCode を開く
 
 ```
 code .
@@ -739,11 +761,11 @@ code .
 
 初回だけ時間がかかるけど、次回以降は速い
 
-VSCodeで `Ctrl+Shift+p` で「Remote-WSL: New Window using Distro 」を選んでdefaultがUbuntuになっていることを確認しておく
+VSCode で `Ctrl+Shift+p` で「Remote-WSL: New Window using Distro 」を選んで default が Ubuntu になっていることを確認しておく
 
 #### VSCode ショートカットキー追加
 
- `Ctrl+Shift+P`でコマンドパレットを表示して、「shortcuts」で検索して「基本設定: キーボードショートカットを開く」を選択
+`Ctrl+Shift+P`でコマンドパレットを表示して、「shortcuts」で検索して「基本設定: キーボードショートカットを開く」を選択
 ![image](https://user-images.githubusercontent.com/18366858/83568109-a2cb5e80-a55d-11ea-85b4-6800be27d288.png)
 
 自分の好みで以下のような設定を追加
@@ -775,27 +797,26 @@ https://code.visualstudio.com/docs/getstarted/keybindings#_basic-editing
     }
 ]
 ```
-- `win+oem_3` は ```Win+` ```を押すたびにエディタとターミナルを切り替えるという意味
-  - これは当初 ```Ctrl+` ``` にしてみたけど、後述の理由によりうまくいかないので「Win＋`」に変更した
--  `ctrl+shift+n` で新しいフォルダを作成
--  `ctrl+n` で新しいファイルを作成
 
-UIでキーボードショートカットを見ると以下のようになっている
+- `win+oem_3` は `` Win+`  ``を押すたびにエディタとターミナルを切り替えるという意味
+  - これは当初 `` Ctrl+`  `` にしてみたけど、後述の理由によりうまくいかないので「Win ＋`」に変更した
+- `ctrl+shift+n` で新しいフォルダを作成
+- `ctrl+n` で新しいファイルを作成
+
+UI でキーボードショートカットを見ると以下のようになっている
 ![image](https://user-images.githubusercontent.com/18366858/83567763-102abf80-a55d-11ea-9205-e15ac3ad9a19.png)
 
-
-#### VSCodeで 「Ctrl+ `」（Ctrl＋バッククオート）が機能しない問題について
-
+#### VSCode で 「Ctrl+ `」（Ctrl ＋バッククオート）が機能しない問題について
 
 <details><summary>詳細は折り畳み</summary><div>
 
-
-自分は日本語環境でUS配列のキーボードを使っているのだけど、ショートカットキーとして、
-```ctrl+` ```が他のキーに割り当てられていて機能しないことがわかった（正確には「``` ` ```」が機能しない）
+自分は日本語環境で US 配列のキーボードを使っているのだけど、ショートカットキーとして、
+`` ctrl+`  ``が他のキーに割り当てられていて機能しないことがわかった（正確には「`` ` ``」が機能しない）
 
 - バッククオートは全角半角に割り当てられているっぽい
 
 参考
+
 - https://github.com/Microsoft/vscode/issues/63659
 - https://qiita.com/uraxurax/items/c95936595cffd9cb85b0
 
@@ -804,43 +825,43 @@ UIでキーボードショートカットを見ると以下のようになって
 以下を参考に英語入力ができるようにしてみた
 
 https://support.microsoft.com/ja-jp/help/4496404/windows-10-manage-the-input-and-display-language#input_language
-> [スタート]  ボタンを選択し、[設定]  > [時刻と言語] > [言語] の順に選択します。
-[優先する言語] で、目的のキーボードが含まれる言語を選択し、[オプション] を選択します。
-[キーボードの追加] を選択し、追加するキーボードを選択します。目的のキーボードが表示されない場合は、新しい言語を追加して追加のオプションを取得する必要があります。この場合は、手順 4 に進みます。
-[言語の設定] ページに戻り、[言語の追加] を選択します。
+
+> [スタート] ボタンを選択し、[設定] > [時刻と言語] > [言語] の順に選択します。
+> [優先する言語] で、目的のキーボードが含まれる言語を選択し、[オプション] を選択します。
+> [キーボードの追加] を選択し、追加するキーボードを選択します。目的のキーボードが表示されない場合は、新しい言語を追加して追加のオプションを取得する必要があります。この場合は、手順 4 に進みます。
+> [言語の設定] ページに戻り、[言語の追加] を選択します。
 
 こんな感じ
 ![image](https://user-images.githubusercontent.com/18366858/83569373-52550080-a55f-11ea-84b0-270301f1c275.png)
 
 こう設定して一度サインアウトしなおすと、英語入力ができるようになる
 
-こうすると、普段の入力については、Windowsの右下に以下のように表示される
+こうすると、普段の入力については、Windows の右下に以下のように表示される
 ![image](https://user-images.githubusercontent.com/18366858/83569682-d3ac9300-a55f-11ea-99c5-d6bb35f87ea6.png)
 
 ここで「Win + Space」を押すと、こんな感じに切り替わるので、
 
 ![image](https://user-images.githubusercontent.com/18366858/83569807-08b8e580-a560-11ea-954c-aace3835dc70.png)
 
-この状態であればVisual Studioで「Ctrl+`」が認識されるようになった。。
+この状態であれば Visual Studio で「Ctrl+`」が認識されるようになった。。
 
-（がちょっとめんどくさいので結局 ``` Ctrl+` ```は挫折して```Win+` ```に変更した）
-
+（がちょっとめんどくさいので結局 `` Ctrl+` ``は挫折して`` Win+`  ``に変更した）
 
 </div></details>
 
-#### gitのPATHが通っていないといわれる
+#### git の PATH が通っていないといわれる
 
-VS Codeで以下のエラーが出た
+VS Code で以下のエラーが出た
 
 ![image](https://user-images.githubusercontent.com/18366858/85337900-518b0b00-b51c-11ea-94a4-c4a5fb48d236.png)
-
 
 https://va2577.github.io/post/83/
 https://github.com/Microsoft/vscode/issues/28315
 
 こちらを参考に以下をした
 
-Windowsのホームディレクトリ以下に以下を追加
+Windows のホームディレクトリ以下に以下を追加
+
 ```
 $pwd
 /mnt/c/wsl
@@ -849,45 +870,50 @@ $cat git.bat
 bash -c 'git %*'
 ```
 
-このファイルを読み込むためにVS Codeのsettings.jsonに以下を追加
+このファイルを読み込むために VS Code の settings.json に以下を追加
+
 ```
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe", ← これはもともとあった設定だけど必要
     "git.path": "C:\\wsl\\git.bat"
 ```
 
-#### Goのパスがおかしいと言われた
+#### Go のパスがおかしいと言われた
 
 ![image](https://user-images.githubusercontent.com/18366858/85465398-b78e9580-b5e3-11ea-8116-5204f5fc1e0e.png)
 
 > Failed to Run "go env" to find GOPATH as the "go"binary
 
-これはWSLではなくてWindowsを見ている。。？
+これは WSL ではなくて Windows を見ている。。？
 
 - `Ctrl+Shift+P` で`Remote-WSL: New Window using Distro` から `Ubuntu` を選択
-- WSL： Ubuntuとしてフォルダを開きなおせば解決した
+- WSL： Ubuntu としてフォルダを開きなおせば解決した
 
-一応 settings.jsonにも以下を追加しておく
+一応 settings.json にも以下を追加しておく
+
 ```
     "go.gopath": "/mnt/c/wsl/go",  // GOPATH
     "go.goroot": "/usr/local/go",  // GOROOT
 ```
 
+#### tag が解決できない
 
-#### tagが解決できない
+自分の Go コードでは、test ファイルのタグに
 
-自分のGoコードでは、testファイルのタグに
 ```
 // +build integration
 ```
+
 や
+
 ```
 // +build !integration
 ```
+
 を使用している
 
 このままだときちんと認識してくれずインテリセンスなどが効かないことがあったので、
 
-settings.jsonを以下のように設定している
+settings.json を以下のように設定している
 
 - もっと簡単にできるかも知れないけどこれでうまくいっているからこのまま
 
@@ -901,7 +927,6 @@ settings.jsonを以下のように設定している
     },
 ```
 
-
 起きたエラー
 
 ```
@@ -911,3 +936,16 @@ Otherwise, see the troubleshooting guidelines for help investigating (https://gi
 ```
 
 参考 https://github.com/microsoft/vscode-go/issues/2808
+
+## VSCode に入れている拡張機能
+
+#### html
+
+Prettier
+https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
+https://rfs.jp/sb/vsc/vsc-prettier.html
+https://qiita.com/rubytomato@github/items/d4716c41a2d15c64f791
+
+拡張機能のフォーマッターを使うのでこちらは無効にしておく
+![image](https://user-images.githubusercontent.com/18366858/141540290-9b23f6fd-5fee-4644-96e5-136fdcb3b702.png)
